@@ -1,0 +1,10 @@
+{
+    "PORT": 3003,
+    "PROJECT_NAME":"StudentProject",
+    "mongo": {
+        "URI": "mongodb://localhost:27017/",
+        "database": "studentDB",
+        "port": 27017
+    }
+    
+}

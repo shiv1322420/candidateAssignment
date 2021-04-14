@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "6220abdf-e835-4f86-bc16-aa341ba8cd72",
+		"name": "StudentTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Candidate 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"shelly\",\n    \"email\":\"shelly@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Candidate 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"sahib\",\n    \"email\":\"sahib@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Candidate 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"rajan\",\n    \"email\":\"rajan@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add first round score of sahib",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sahib@gmail.com\",\n    \"testName\":\"first_round\",\n    \"testScore\":\"10\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add first round score of shelly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"shelly@gmail.com\",\n    \"testName\":\"first_round\",\n    \"testScore\":\"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add first round score of rajan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"rajan@gmail.com\",\n    \"testName\":\"first_round\",\n    \"testScore\":\"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get highest candidate with average",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/candidate/getScore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"getScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add second round score of shelly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"shelly@gmail.com\",\n    \"testName\":\"second_round\",\n    \"testScore\":\"7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add second round score of sahib",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sahib@gmail.com\",\n    \"testName\":\"second_round\",\n    \"testScore\":\"8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add second round score of rajan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"rajan@gmail.com\",\n    \"testName\":\"second_round\",\n    \"testScore\":\"7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add third round score of shelly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"shelly@gmail.com\",\n    \"testName\":\"third_round\",\n    \"testScore\":\"8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add third round score of sahib",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"shelly@gmail.com\",\n    \"testName\":\"third_round\",\n    \"testScore\":\"8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add third round score of rajan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"rajan@gmail.com\",\n    \"testName\":\"third_round\",\n    \"testScore\":\"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/candidate/addScore",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"candidate",
+						"addScore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
